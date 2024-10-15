@@ -1,0 +1,166 @@
+
+<!-- footer.html -->
+
+<!-- Footer Content -->
+<footer id="bspFooter" role="contentinfo" class="bsp-custom-footer">
+    <div id="bspFooterBottom" class="bsp-footer-bottom">
+      <div class="container bsp-custom-container">
+        <div class="row">
+         
+          <div id="bspImpressumLinkContainer" class="col-lg-3 col-md-3 col-sm-3 text-center">
+            <a id="bspImpressumLink" href="#" data-bs-toggle="modal" data-bs-target="#bspImpressumModal" class="bsp-footer-link">Impressum</a>
+          </div>
+          <div id="bspAccessibilityLinkContainer" class="col-lg-3 col-md-3 col-sm-3 text-end">
+            <!-- Accessibility Links will be dynamically inserted here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Impressum Modal -->
+  <div class="modal fade" id="bspImpressumModal" tabindex="-1" aria-labelledby="bspImpressumModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div id="bspImpressumModalContent" class="modal-content">
+        <div id="bspImpressumModalHeader" class="modal-header">
+          <h5 class="modal-title" id="bspImpressumModalLabel">Impressum</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="bspImpressumModalBody" class="modal-body">
+            {% comment %}
+            Template Name: bsp_impressum
+            Description: Impressum template for Besper UG (haftungsbeschränkt) with McKinsey-inspired design
+            {% endcomment %}
+            
+            <div id="bspImpressum" class="bsp-impressum">
+                <h2 id="bspImpressumTitle" class="bsp-impressum-title">Impressum</h2>
+                <div class="bsp-impressum-content">
+                    <div class="bsp-impressum-section">
+                        <h3 id="bspImpressumCompanyDetails" class="bsp-impressum-subtitle">Angaben gemäß § 5 TMG</h3>
+                        <p id="bspImpressumCompanyAddress">
+                            Besper UG (haftungsbeschränkt)<br>
+                            Allacher Str. 189<br>
+                            80997 München
+                        </p>
+                    </div>
+                    <div class="bsp-impressum-section">
+                        <h3 id="bspImpressumRepresentative" class="bsp-impressum-subtitle">Vertreten durch</h3>
+                        <p id="bspImpressumRepresentativeName">
+                            Wolfgang Sperger, Geschäftsführer
+                        </p>
+                    </div>
+                    <div class="bsp-impressum-section">
+                        <h3 id="bspImpressumContact" class="bsp-impressum-subtitle">Kontakt</h3>
+                        <p id="bspImpressumContactDetails">
+                            Telefon: [Ihre Telefonnummer]<br>
+                            E-Mail: [Ihre E-Mail-Adresse]
+                        </p>
+                    </div>
+                    <div class="bsp-impressum-section">
+                        <h3 id="bspImpressumRegistry" class="bsp-impressum-subtitle">Registereintrag</h3>
+                        <p id="bspImpressumRegistryDetails">
+                            Eintragung im Handelsregister.<br>
+                            Registergericht: Amtsgericht München<br>
+                            Registernummer: HRB [Ihre HRB-Nummer]
+                        </p>
+                    </div>
+                    <div class="bsp-impressum-section">
+                        <h3 id="bspImpressumVAT" class="bsp-impressum-subtitle">Umsatzsteuer-ID</h3>
+                        <p id="bspImpressumVATDetails">
+                            Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
+                            [Ihre Umsatzsteuer-ID]
+                        </p>
+                    </div>
+                    <div class="bsp-impressum-section">
+                        <h3 id="bspImpressumResponsible" class="bsp-impressum-subtitle">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
+                        <p id="bspImpressumResponsiblePerson">
+                            Wolfgang Sperger<br>
+                            Allacher Str. 189<br>
+                            80997 München
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+                /* Impressum styles inspired by McKinsey */
+                .bsp-impressum {
+                    font-family: 'Helvetica Neue', Arial, sans-serif;
+                    color: #333;
+                    line-height: 1.6;
+                    max-width: 800px;
+                    margin: 0 auto;
+                    padding: 40px 20px;
+                }
+            
+                .bsp-impressum-title {
+                    font-size: 36px;
+                    font-weight: 300;
+                    color: #1D4F91;
+                    text-align: center;
+                    margin-bottom: 40px;
+                    position: relative;
+                }
+            
+                .bsp-impressum-title::after {
+                    content: '';
+                    display: block;
+                    width: 60px;
+                    height: 4px;
+                    background-color: #1D4F91;
+                    margin: 20px auto 0;
+                }
+            
+                .bsp-impressum-content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+            
+                .bsp-impressum-section {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            
+                .bsp-impressum-subtitle {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #1D4F91;
+                    margin-bottom: 15px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #e0e0e0;
+                }
+            
+                .bsp-impressum p {
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                }
+            
+                @media (min-width: 768px) {
+                    .bsp-impressum-section {
+                        width: 48%;
+                    }
+                }
+            
+                @media (min-width: 992px) {
+                    .bsp-impressum {
+                        padding: 60px 40px;
+                    }
+            
+                    .bsp-impressum-title {
+                        font-size: 42px;
+                    }
+            
+                    .bsp-impressum-subtitle {
+                        font-size: 20px;
+                    }
+            
+                    .bsp-impressum p {
+                        font-size: 17px;
+                    }
+                }
+            </style>
+        </div>
+      </div>
+    </div>
+  </div>

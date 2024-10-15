@@ -1,4 +1,6 @@
 
+// header.js
+
 // Load the header
 fetch('header.html')
   .then(response => response.text())
@@ -21,7 +23,7 @@ function initializeHeader() {
     // Toggle menu on click
     menuToggle.addEventListener('click', function() {
       var isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', !isExpanded);
+      menuToggle.setAttribute('aria-expanded', (!isExpanded).toString());
       navbar.classList.toggle('show');
     });
   }
@@ -30,11 +32,13 @@ function initializeHeader() {
   var logoContainer = document.getElementById('bsp-logo-container');
   var taglineHighlight = logoContainer.querySelector('.bsp-tagline-highlight');
 
-  logoContainer.addEventListener('mouseenter', function() {
-    taglineHighlight.style.color = '#0056b3';
-  });
+  if (logoContainer && taglineHighlight) {
+    logoContainer.addEventListener('mouseenter', function() {
+      taglineHighlight.style.color = '#0056b3';
+    });
 
-  logoContainer.addEventListener('mouseleave', function() {
-    taglineHighlight.style.color = '#003057';
-  });
+    logoContainer.addEventListener('mouseleave', function() {
+      taglineHighlight.style.color = '#003057';
+    });
+  }
 }

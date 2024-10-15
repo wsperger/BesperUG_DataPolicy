@@ -1,0 +1,157 @@
+
+   <!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <title>Besper Home Page</title>
+  <!-- Include Styles -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header Placeholder -->
+  <div id="header-placeholder"></div>
+
+  <!-- Wavy Background Canvas -->
+  <canvas id="wavyCanvas"></canvas>
+
+  <!-- Main Container -->
+  <div class="bsp-container">
+    <!-- Header Elements Removed (since they are now in header.html) -->
+
+    <!-- Main Content -->
+    <div class="bsp-main-content">
+      <div class="bsp-info-box">
+        <p data-i18n-key="home_page_info_box_text"></p>
+      </div>
+      <div class="stats-box">
+        <p data-i18n-key="home_page_stats_box_pre_count_text"></p>
+        <span id="conversation-count" class="stats-number">0</span>
+        <p data-i18n-key="home_page_stats_box_post_count_text"></p>
+      </div>
+    </div>
+
+    <!-- Advantages Section -->
+    <div class="besper-advantages-container">
+      <div class="besper-advantages-content">
+        <div id="advantagesList" class="besper-advantages-list">
+          <!-- List of advantage items -->
+          <div class="besper-advantage-item active" data-index="0">
+            <span data-i18n-key="home_page_advantage_1_title"></span>
+          </div>
+          <div class="besper-advantage-item" data-index="1">
+            <span data-i18n-key="home_page_advantage_2_title"></span>
+          </div>
+          <div class="besper-advantage-item" data-index="2">
+            <span data-i18n-key="home_page_advantage_3_title"></span>
+          </div>
+          <!-- Add more advantages as needed -->
+        </div>
+        <div class="besper-advantages-display">
+          <h2 class="besper-advantages-heading" data-i18n-key="home_page_advantages_heading"></h2>
+          <div id="advantageContents">
+            <!-- Advantage contents -->
+            <div class="advantage-content" data-index="0">
+              <h3 class="besper-advantage-title" data-i18n-key="home_page_advantage_1_title"></h3>
+              <p data-i18n-key="home_page_advantage_1_description"></p>
+            </div>
+            <div class="advantage-content" data-index="1" style="display: none;">
+              <h3 class="besper-advantage-title" data-i18n-key="home_page_advantage_2_title"></h3>
+              <p data-i18n-key="home_page_advantage_2_description"></p>
+            </div>
+            <div class="advantage-content" data-index="2" style="display: none;">
+              <h3 class="besper-advantage-title" data-i18n-key="home_page_advantage_3_title"></h3>
+              <p data-i18n-key="home_page_advantage_3_description"></p>
+            </div>
+            <!-- Add more advantage contents as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Package Details Section -->
+    <div class="package-details">
+      <div class="package-content">
+        <div class="package-feature">
+          <i class="fas fa-comments"></i>
+          <div>
+            <h3 data-i18n-key="home_page_package_feature_1_title"></h3>
+            <p data-i18n-key="home_page_package_feature_1_description"></p>
+          </div>
+        </div>
+        <div class="package-feature">
+          <i class="fas fa-coins"></i>
+          <div>
+            <h3 data-i18n-key="home_page_package_feature_2_title"></h3>
+            <p data-i18n-key="home_page_package_feature_2_description"></p>
+          </div>
+        </div>
+        <!-- Add more package features as needed -->
+      </div>
+    </div>
+
+    <!-- Additional Content -->
+    <div class="bsp-additional-content">
+      <!-- Chatbot and Data Table Section -->
+      <div class="bsp-chatbot-and-table">
+        <h1 class="bsp-title" data-i18n-key="homepage_testbot_title"></h1>
+        <p class="bsp-description" data-i18n-key="homepage_testbot_description"></p>
+        <div class="bsp-chatbot-input">
+          <div class="bsp-input-wrapper">
+            <input type="url" id="bspWebsiteUrl" placeholder="" data-i18n-placeholder="homepage_testbot_placeholder">
+            <button id="bspUpdateButton" onclick="getInformation()" data-i18n-key="homepage_testbot_update_button_text"></button>
+          </div>
+        </div>
+        <!-- Loading Indicator -->
+        <div id="bspLoadingIndicator" class="bsp-message">
+          <div class="bsp-spinner"></div>
+        </div>
+        <!-- Error message div -->
+        <div id="bspErrorMessage" class="bsp-message">
+          <!-- Error messages will appear here -->
+        </div>
+        <!-- Timer message div -->
+        <div id="bspTimerMessage" class="bsp-message">
+          <!-- Timer message will appear here -->
+        </div>
+        <!-- Container for iframe and data table -->
+        <div class="bsp-chatbot-content">
+          <!-- Iframe Container -->
+          <div id="bspIframeContainer">
+            <!-- The iframe will be inserted here via JavaScript -->
+          </div>
+          <!-- Data Table -->
+          <div id="bspDataTableContainer">
+            <table id="bspDataTable">
+              <thead>
+                <tr>
+                  <th data-i18n-key="homepage_testbot_table_header"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Data rows will appear here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup Button -->
+    <div class="bsp-signup">
+      <a href="/Contact/" class="signup-button" data-i18n-key="home_page_signup_button_text"></a>
+    </div>
+
+  </div>
+
+  <!-- Include Scripts -->
+  <script src="js/header.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

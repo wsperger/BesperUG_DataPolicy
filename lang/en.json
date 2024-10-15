@@ -1,0 +1,26 @@
+
+{
+    "home_page_header_title": "Welcome to Besper",
+    "home_page_header_subtitle": "Your partner for innovative chatbot solutions",
+    "language_label": "Language:",
+    "home_page_info_box_text": "We provide innovative AI solutions for your business.",
+    "home_page_stats_box_pre_count_text": "Our clients have facilitated",
+    "home_page_stats_box_post_count_text": "conversations through our platform.",
+    "home_page_advantage_1_title": "Advantage One",
+    "home_page_advantage_1_description": "Description for advantage one.",
+    "home_page_advantage_2_title": "Advantage Two",
+    "home_page_advantage_2_description": "Description for advantage two.",
+    "home_page_advantage_3_title": "Advantage Three",
+    "home_page_advantage_3_description": "Description for advantage three.",
+    "home_page_advantages_heading": "Why Choose Us?",
+    "home_page_package_feature_1_title": "Feature One",
+    "home_page_package_feature_1_description": "Description for feature one.",
+    "home_page_package_feature_2_title": "Feature Two",
+    "home_page_package_feature_2_description": "Description for feature two.",
+    "homepage_testbot_title": "Test Our Chatbot",
+    "homepage_testbot_description": "Interact with our demo chatbot.",
+    "homepage_testbot_placeholder": "Enter your website URL",
+    "homepage_testbot_update_button_text": "Update",
+    "homepage_testbot_table_header": "Page Name",
+    "home_page_signup_button_text": "Sign Up Now"
+  }

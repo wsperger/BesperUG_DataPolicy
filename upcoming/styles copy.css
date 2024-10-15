@@ -1,0 +1,435 @@
+
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+  }
+  
+  .bsp-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  .bsp-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .bsp-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .bsp-header p {
+    font-size: 1.2em;
+    color: #5897de;
+  }
+  
+  .language-selector {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .language-selector label {
+    margin-right: 10px;
+  }
+  
+  .language-selector select {
+    padding: 5px;
+    font-size: 1em;
+  }
+  
+  /* Main Content Styles */
+  .bsp-main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .bsp-info-box, .stats-box {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stats-box {
+    text-align: center;
+    margin-left: 20px;
+  }
+  
+  .stats-number {
+    font-size: 3rem;
+    color: #5897de;
+    font-weight: bold;
+    margin: 1.5rem 0;
+  }
+  
+  /* Advantages Section Styles */
+  .besper-advantages-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .besper-advantages-content {
+    display: flex;
+  }
+  
+  .besper-advantages-list {
+    width: 30%;
+    background-color: #f0f4f8;
+    padding: 20px 0;
+  }
+  
+  .besper-advantage-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .besper-advantage-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .besper-advantage-item.active {
+    background-color: #5897de;
+    color: white;
+  }
+  
+  .besper-advantages-display {
+    width: 70%;
+    padding: 40px;
+  }
+  
+  .besper-advantages-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #003057;
+  }
+  
+  .advantage-content {
+    display: none;
+  }
+  
+  .advantage-content.active {
+    display: block;
+  }
+  
+  .besper-advantage-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  /* Package Details Section */
+  .package-details {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  .package-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #5897de;
+  }
+  
+  .package-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .package-feature {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+  }
+  
+  .package-feature i {
+    font-size: 24px;
+    color: #5897de;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+  
+  .package-feature h3 {
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .package-feature p {
+    font-size: 0.95em;
+    color: #666;
+    margin: 0;
+  }
+  
+  /* Additional Content Styles */
+  .bsp-additional-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  /* Chatbot and Data Table Styles */
+  .bsp-chatbot-and-table {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex: 1;
+  }
+  
+  .bsp-chatbot-and-table .bsp-title {
+    color: #003057;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .bsp-chatbot-and-table .bsp-description {
+    margin-bottom: 20px;
+  }
+  
+  .bsp-chatbot-and-table .bsp-chatbot-input {
+    margin-bottom: 20px;
+  }
+  
+  .bsp-chatbot-and-table .bsp-input-wrapper {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .bsp-chatbot-and-table #bspWebsiteUrl {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .bsp-chatbot-and-table #bspUpdateButton {
+    padding: 12px 24px;
+    background-color: #003057;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bsp-chatbot-and-table #bspUpdateButton:hover {
+    background-color: #00264a;
+  }
+  
+  .bsp-chatbot-and-table #bspUpdateButton:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .bsp-chatbot-and-table .bsp-chatbot-content {
+    display: flex;
+    gap: 20px;
+    height: 600px;
+  }
+  
+  .bsp-chatbot-and-table #bspIframeContainer,
+  .bsp-chatbot-and-table #bspDataTableContainer {
+    flex: 1;
+    height: 100%;
+  }
+  
+  .bsp-chatbot-and-table #bspIframeContainer {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+  }
+  
+  .bsp-chatbot-and-table #bspIframeContainer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .bsp-chatbot-and-table #bspDataTableContainer {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bsp-chatbot-and-table #bspDataTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .bsp-chatbot-and-table #bspDataTable thead {
+    background-color: #f8f8f8;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .bsp-chatbot-and-table #bspDataTable th,
+  .bsp-chatbot-and-table #bspDataTable td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .bsp-chatbot-and-table #bspDataTable th {
+    font-weight: 600;
+    color: #003057;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  
+  .bsp-chatbot-and-table #bspDataTable tbody {
+    display: block;
+    overflow-y: auto;
+    flex: 1;
+  }
+  
+  .bsp-chatbot-and-table #bspDataTable tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .bsp-chatbot-and-table #bspDataTable tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .bsp-chatbot-and-table #bspDataTable tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .bsp-chatbot-and-table #bspDataTable a {
+    color: #003057;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .bsp-chatbot-and-table #bspDataTable a:hover {
+    color: #00264a;
+    text-decoration: underline;
+  }
+  
+  .bsp-chatbot-and-table .bsp-message {
+    text-align: center;
+    padding: 7px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    display: none;
+  }
+  
+  .bsp-chatbot-and-table #bspLoadingIndicator {
+    background-color: #e2e3e5;
+    color: #383d41;
+  }
+  
+  .bsp-chatbot-and-table #bspErrorMessage {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .bsp-chatbot-and-table #bspTimerMessage {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .bsp-chatbot-and-table .bsp-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #003057;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: bspSpin 1s linear infinite;
+    margin: 0 auto;
+  }
+  
+  .bsp-table-loading-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+  
+  @keyframes bspSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Signup Button Styles */
+  .bsp-signup {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .signup-button {
+    display: inline-block;
+    background-color: #5897de;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+  }
+  
+  .signup-button:hover {
+    background-color: #003057;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .bsp-main-content, .bsp-additional-content, .package-content {
+      flex-direction: column;
+    }
+    .stats-box {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    .besper-advantages-content {
+      flex-direction: column;
+    }
+    .besper-advantages-list, .besper-advantages-display {
+      width: 100%;
+    }
+    .package-content {
+      grid-template-columns: 1fr;
+    }
+  }

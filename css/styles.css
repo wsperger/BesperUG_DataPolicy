@@ -1,130 +1,176 @@
+/* Reset and base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
-/* Main Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f4f8;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
+/* Container */
 .bsp-container {
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Removed overflow: auto; and max-height: 100vh; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* Header Styles */
+/* Header */
 .bsp-header {
-    text-align: center;
-    margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .bsp-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #003057;
+  font-size: 2.5rem;
+  color: #003057;
+  margin: 0 0 10px 0;
 }
 
-.bsp-header p {
-    font-size: 1.2em;
-    color: #5897de;
+/* Typography */
+h1, h2, h3 {
+  color: #003057;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-/* Content Styles */
-.bsp-content h1,
-.bsp-content h2,
-.bsp-content h3 {
-    color: #003057;
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+
+p {
+  margin-bottom: 1rem;
 }
 
-.bsp-content h1 {
-    font-size: 2em;
-    margin-top: 40px;
+/* Lists */
+ul, ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.bsp-content h2 {
-    font-size: 1.75em;
-    margin-top: 30px;
+li {
+  margin-bottom: 0.5rem;
 }
 
-.bsp-content h3 {
-    font-size: 1.5em;
-    margin-top: 25px;
-}
-
-.bsp-content p {
-    font-size: 1em;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.bsp-content ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.bsp-content li {
-    margin-bottom: 10px;
-    line-height: 1.4;
-}
-
+/* Table of Contents */
 .index {
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 30px;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
 }
 
 .index li {
-    margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 
-.index a {
-    text-decoration: none;
-    color: #5897de;
-    transition: color 0.3s;
+.index-link {
+  text-decoration: none;
+  color: #003057;
+  transition: color 0.3s;
 }
 
-.index a:hover {
-    color: #003057;
+.index-link:hover {
+  text-decoration: underline;
 }
 
-/* Footer Seal */
-.seal {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 0.9em;
+/* Content sections */
+.m-elements {
+  margin-bottom: 2rem;
 }
 
-.seal a {
-    text-decoration: none;
-    color: #5897de;
+.m-elements li {
+  margin-bottom: 1rem;
 }
 
-/* Wavy Background */
+/* Links */
+a {
+  color: #003057;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Wavy background */
 #wavyCanvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .bsp-container {
-        max-width: 95%;
-    }
-    .bsp-header h1 {
-        font-size: 2em;
-    }
+/* Main content */
+.main-content {
+  position: relative;
+  z-index: 1;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .bsp-container {
+    padding: 15px;
+  }
+
+  .bsp-header h1 {
+    font-size: 2rem;
+  }
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+}
+
+/* Additional styles for better readability */
+.text-muted {
+  color: #666;
+}
+
+.text-primary {
+  color: #003057;
+}
+
+/* Ensure first element has no top margin */
+.bsp-container > *:first-child {
+  margin-top: 0;
+}
+
+/* Navbar styles (if present) */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+/* Footer styles (if present) */
+.footer {
+  background-color: rgba(248, 249, 250, 0.9);
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #e0e0e0;
+  position: relative;
+  z-index: 3;
+}
+
+/* Additional utility classes */
+.mt-0 { margin-top: 0 !important; }
+.mb-0 { margin-bottom: 0 !important; }
+.pt-0 { padding-top: 0 !important; }
+.pb-0 { padding-bottom: 0 !important; }
